@@ -28,7 +28,7 @@
   <!--header-->
   <header class="main-header clearfix" role="header">
     <div class="logo">
-      <a href="#"><em>Coding Bootcamp</em> Academy</a>
+      <a href="#" id="top"><em>Coding Bootcamp</em> Academy</a>
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
@@ -52,15 +52,13 @@
     </nav>
   </header>
 
-
- 
-
+  <!--Sub Menu-->
   <section class="section why-us" data-section="section2">
     <div class="container">
-      <div class="row">
+      <div class="row"  id='tabs-1'>
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Students Page</h2>
+            <h2>Student Management Page</h2>
           </div>
         </div>
         <div class="col-md-12">
@@ -72,10 +70,10 @@
             </ul>
          
             <section class='tabs-content'>
-                <div id='tabs-1'>
+                <div>
                 <div class="row"> 
                     <div class="col-md-12 col-12">
-                        <h4 class="text-center">All active <em>Student</em> records</h4> TODO: Make the students yellow like below
+                        <h4 class="text-center">All active <em>Student</em> records</h4> <!--TODO: Make the students yellow like below-->
                         <table class="table table-light">
                         <thead>
                             <tr>
@@ -103,7 +101,6 @@
                                 <td>
                                     <div class="btn-group">
                                         <a class="btn btn-warning" href="students_edit.html">Edit</a>
-                                        <a class="btn btn-danger" href="students_delete.html">Delete</a>
                                     </div>
                                 </td>
                             </tr>
@@ -122,7 +119,6 @@
                                 <td>
                                     <div class="btn-group">
                                         <a class="btn btn-warning" href="students_edit.html">Edit</a>
-                                        <a class="btn btn-danger" href="students_delete.html">Delete</a>
                                     </div>
                                 </td>
                             </tr>
@@ -141,7 +137,7 @@
                                 <td>
                                     <div class="btn-group">
                                         <a class="btn btn-warning" href="students_edit.html">Edit</a>
-                                        <a class="btn btn-danger" href="students_delete.html">Delete</a>
+                                       
                                     </div>
                                 </td>
                             </tr>
@@ -160,20 +156,20 @@
     </div>
   </section>
 
-  <section class="section coming-soon" data-section="section3" id="tabs-3">
+  <!--Add new student-->
+  <section class="section coming-soon" data-section="section3" id="tabs-2">
       <div class="container" id='tabs-2'>
           <div class="row">
               <div class="col-12 col-md-12 col-xs-12">
                   <div class="continer">
                       <div>
-                          <h4 class="text-center">Add new <em>Student</em> records below</h4>
+                          <h4 class="text-center">Add new <em>Student</em> records</h4>
                       </div>
                   </div>
               </div>
           </div>
 
           <div class="row">
-
               <div class="col-md-12">
                   <div class="right-content">
                       <div class="top-content">
@@ -198,7 +194,7 @@
                               </div>
                               <div class="col-md-12">
                                   <fieldset>
-                                      <button type="submit" id="form-submit" class="button">Get it now</button>
+                                      <button type="submit" id="form-submit" class="button">Submit</button>
                                   </fieldset>
                               </div>
                           </div>
@@ -209,19 +205,23 @@
       </div>
   </section>
 
-  <section class="section courses" data-section="section4">
+  <section class="section coming-soon courses" data-section="section4" id="tabs-3">
       <div class="container-fluid">
           <div class="row">
-              <div class="col-md-12">
-                  <div class="section-heading">
-                      <h2>Edit existing student record</h2>
+              <div class="col-12 col-md-12 col-xs-12">
+                  <div class="continer">
+                      <div>
+                          <h4 class="text-center">Edit existing <em>Student</em> record</h4>
+                      </div>
                   </div>
               </div>
           </div>
           <div class="row">
               <div class="col-md-12">
-                 
-                  <form id="contact">
+                  <div class="top-content">
+                      <h6>Update the details of the student below</h6>
+                  </div>
+                  <form >
 
                       <div class="form-group">
                           <label for="firstname">First Name *</label>
@@ -249,7 +249,7 @@
                       <button class="btn btn-primary form-control">Submit</button>
 
                       <div class="mt-4 mb-0">
-                          <a class="btn btn-success m-1" href="students.html">Return to Students</a>
+                          <a class="btn btn-success " href="#top">Return to Students</a>
                       </div>
 
                   </form>
@@ -258,57 +258,7 @@
       </div>
   </section>
   
-
   
-
-  <section class="section contact" data-section="section6">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-heading">
-            <h2>Let’s Keep In Touch</h2>
-          </div>
-        </div>
-        <div class="col-md-6">
-        
-        <!-- Do you need a working HTML contact-form script?
-                	
-                    Please visit https://templatemo.com/contact page -->
-                    
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-md-6">
-                  <fieldset>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-6">
-                  <fieldset>
-                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
-                  </fieldset>
-                </div>
-              <div class="col-md-12">
-                <fieldset>
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                </fieldset>
-              </div>
-              <div class="col-md-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <div id="map">
-            <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer>
     <div class="container">
       <div class="row">
