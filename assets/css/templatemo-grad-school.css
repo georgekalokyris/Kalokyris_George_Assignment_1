@@ -588,17 +588,20 @@ section.why-us {
     color: #fff;
     font-size: 15px;
     line-height: 28px;
+
 }
 
 .tabs-content {
     margin-top: 60px;
     text-align: left;
+    
 }
 
 @media screen and (max-width: 767px) {
   
   .tabs-content {
       text-align: center;
+
   }
 
 }
