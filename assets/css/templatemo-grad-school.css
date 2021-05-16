@@ -625,6 +625,13 @@ section.why-us {
     text-align:start;
 }
 
+#courseslist li:hover {
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    color: #f5a425;
+}
 
 
 /* Coming Soon */
