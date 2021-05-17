@@ -640,14 +640,14 @@ section.coming-soon {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
-    padding: 120px 0px;
+    padding: 100px 0px;
 }
 
 section.coming-soon .continer .counter div {
   display: inline-block;
 }
 section.coming-soon .continer h4 {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 30px;
     color: #fff;
     font-weight: 800;
@@ -762,21 +762,23 @@ section.coming-soon form {
     background-color: rgba(250,250,250,0.1);
     padding: 60px 40px;
     width: 100%;
-    text-align: center;
+    text-align:center;
 }
 
-section.coming-soon form input {
-    width: 100%;
-    height: 40px;
-    background-color: rgba(250,250,250,0.1);
-    border-radius: 0px;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 13px;
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
-}
+   
+
+    section.coming-soon form input {
+        width: 100%;
+        height: 40px;
+        background-color: rgba(250,250,250,0.1);
+        border-radius: 0px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 13px;
+        margin-bottom: 30px;
+        letter-spacing: 0.5px;
+    }
 
 section.coming-soon form input:focus {
     outline: none;
@@ -804,13 +806,14 @@ section.coming-soon form button {
     outline: auto;
     box-shadow: none;
     border: none;
+    
 }
 
 
 
 
-/* Courses */
 
+/* Courses */
 section.courses {
     background-image: url(../images/choosing-bg.jpg);
     background-repeat: no-repeat;
@@ -818,7 +821,6 @@ section.courses {
     background-color: #172238;
     padding-bottom: 100px;
     padding: 0px 50px 100px 50px;
-    
 }
 
 section.courses .item img {
@@ -897,10 +899,9 @@ section.courses .owl-carousel button.active {
 }
 
 .form-control {
-    width: 33%;
-    element .style
-
-
+    width: 210%;
+   
+}
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
