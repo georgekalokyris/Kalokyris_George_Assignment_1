@@ -32,23 +32,25 @@
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
-      <ul class="main-menu">
-        <li><a href="#section1">Home</a></li>
-        <li><a href="#section4">Courses</a></li>
-        <li><a href="#section4">Trainers</a></li>
-        <li><a href="#section4">Students</a></li>
-        <li><a href="#section4">Assignments</a></li>
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://www.google.com">Google</a></li>
+            <li><a href="assets/html/Courses.html">Courses</a></li>
+            <li><a href="assets/html/Trainers.html">Trainers</a></li>
+            <li><a href="assets/html/Students.html">Students</a></li>
+            <li><a href="assets/html/Assignments.html">Assignments</a></li>
 
-        <li class="has-submenu"><a href="#section2">More</a>
-          <ul class="sub-menu">
-            <li><a href="#section2">Trainers per Course</a></li> 
-            <li><a href="#section3">Students per Course</a></li> <!--TODO: Fix allignment of items in menu-->
-            <li><a href="#section3">Assignments per Course</a></li>
-            <li><a href="#section3">Assignments per Student per Course</a></li>
-          </ul>
-        </li>
-        <li><a href="#section6">Contact</a></li>
-      </ul>
+            <li class="has-submenu">
+                <a href="#section2">More</a>
+                <ul class="sub-menu">
+                    <li><a href="#section2">Trainers per Course</a></li>
+                    <li><a href="#section3">Students per Course</a></li> <!--TODO: Fix allignment of items in menu-->
+                    <li><a href="#section3">Assignments per Course</a></li>
+                    <li><a href="#section3">Assignments per Student per Course</a></li>
+                </ul>
+            </li>
+            <li><a href="#section6">Contact</a></li>
+        </ul>
     </nav>
   </header>
 
@@ -529,9 +531,9 @@
             bottomEdge = topEdge + $this.height(),
             wScroll = $(window).scrollTop();
             if (topEdge < wScroll && bottomEdge > wScroll) {
-              var
+                var
               currentId = $this.data('section'),
-              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink = $('a');
               reqLink.closest('li').addClass('active').
               siblings().removeClass('active');
             }

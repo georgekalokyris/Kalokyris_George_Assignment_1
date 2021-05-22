@@ -74,22 +74,22 @@
             <div class="row" id='tabs-1'>
                 <div class="col-md-12">
                     <div class="section-heading">
-                        <h2>Student Management Page</h2>
+                        <h2>Course Management Page</h2>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div id='tabs'>
                         <ul>
-                            <li><a href='#tabs-1'>All Student Records</a></li>
-                            <li><a href='#tabs-2'>Add new Student Records</a></li>
-                            <li><a href='#tabs-3'>Update Student Records</a></li>
+                            <li><a href='#tabs-1'>All Trainer Records</a></li>
+                            <li><a href='#tabs-2'>Add new Trainer Records</a></li>
+                            <li><a href='#tabs-3'>Update Trainer Records</a></li>
                         </ul>
 
                         <section class='tabs-content'>
                             <div>
                                 <div class="row">
                                     <div class="col-md-12 col-12">
-                                        <h4 class="text-center">All active <em>Student</em> records</h4> 
+                                        <h4 class="text-center">All active <em>Trainer</em> records</h4>
                                         <table class="table table-hover theader">
                                             <thead style="color: #f5a425; text-align:center;">
                                                 <tr>
@@ -98,43 +98,40 @@
                                                     <th>Date of Birth</th>
                                                     <th>Email</th>
                                                     <th>Phone Number</th>
-                                                    <th>Tuition Fees</th>
-                                                    <th>Courses</th>
+                                                    <th>Subjects</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody style="color:white; text-align:center;" id="courseslist">
                                                 <tr>
-                                                    <td>George</td>
-                                                    <td>Kalokyris</td>
-                                                    <td>19/10/1994</td>
-                                                    <td>kalokirisg@gmail.com</td>
-                                                    <td>+44 07510007010</td>
-                                                    <td>2000</td>
+                                                    <td>Hector</td>
+                                                    <td>Gkatsos</td>
+                                                    <td>19/10/1982</td>
+                                                    <td>hgatsos@gmail.com</td>
+                                                    <td>+30 6945916123</td>
                                                     <td>
-                                                        <ul>
+                                                        <ul class="align-items-center">
                                                             <li>C#</li>
-                                                            <li>Python</li>
-                                                            <li>EF</li>
+                                                            <li>Azure</li>
+                                                            <li>UX</li>
                                                         </ul>
                                                     </td>
                                                     <td>
-                                                        <div class="btn-group" >
+                                                        <div class="btn-group">
                                                             <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
                                                             <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>John</td>
-                                                    <td>Pantaz</td>
-                                                    <td>10/10/1988</td>
-                                                    <td>JPant@gmail.com</td>
-                                                    <td>+44 075123054</td>
-                                                    <td>2500</td>
+                                                    <td>Michael</td>
+                                                    <td>Scott</td>
+                                                    <td>10/10/1977</td>
+                                                    <td>MScott@dundermifflin.com</td>
+                                                    <td>+151 812123</td>
                                                     <td>
                                                         <ul>
-                                                            <li>JS</li>
+                                                            <li>Go</li>
                                                             <li>Java</li>
                                                             <li>AWS</li>
                                                         </ul>
@@ -147,18 +144,17 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Ant</td>
-                                                    <td>Kats</td>
-                                                    <td>19/12/1994</td>
-                                                    <td>AKats@gmail.com</td>
-                                                    <td>+44 075123054</td>
-                                                    <td>3000</td>
+                                                    <td>Dwight</td>
+                                                    <td>Schrute</td>
+                                                    <td>01/03/1980</td>
+                                                    <td>Dwight@dundermifflin.com</td>
+                                                    <td>+44 1289312</td>
 
                                                     <td>
                                                         <ul>
-                                                            <li>C#</li>
-                                                            <li>Python</li>
-                                                            <li>Azure</li>
+                                                            <li>node.JS</li>
+                                                            <li>Angular</li>
+                                                            <li>AWS</li>
                                                         </ul>
                                                     </td>
                                                     <td>
@@ -183,14 +179,14 @@
         </div>
     </section>
 
-    <!--Add new student-->
+    <!--Add new Trainer-->
     <section class="section coming-soon" data-section="section3" id="tabs-2">
         <div class="container" id='tabs-2'>
             <div class="row">
                 <div class="col-12 col-md-12 col-xs-12">
                     <div class="continer">
                         <div>
-                            <h4 class="text-center">Add new <em>Student</em> records</h4>
+                            <h4 class="text-center">Add new <em>Trainer</em> records</h4>
                         </div>
                     </div>
                 </div>
@@ -200,7 +196,7 @@
                 <div class="col-md-12">
                     <div class="right-content">
                         <div class="top-content">
-                            <h6>Enter the details of the new student below</h6>
+                            <h6>Enter the details of the new Trainer below</h6>
                         </div>
                         <form id="contact">
                             <div class="row">
@@ -234,12 +230,7 @@
                                         <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Phone Number">
                                     </fieldset>
                                 </div>
-                                <div class="col-md-12">
-                                    <fieldset>
-                                        <label for="tuitfees">Tuition Fees</label>
-                                        <input name="tuitfees" type="number" class="form-control" id="tuitfees" placeholder="Tuition Fees">
-                                    </fieldset>
-                                </div>
+                                
                                 <div class="col-md-12">
                                     <fieldset>
                                         <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
@@ -260,7 +251,7 @@
                 <div class="col-12 col-md-12 col-xs-12">
                     <div class="continer">
                         <div>
-                            <h4 class="text-center">Edit existing <em>Student</em> record</h4>
+                            <h4 class="text-center">Edit existing <em>Trainer</em> record</h4>
                         </div>
                     </div>
                 </div>
@@ -268,35 +259,30 @@
             <div class="row">
                 <div class="col-12">
                     <div class="top-content">
-                        <h6>Update the details of the Student below</h6>
+                        <h6>Update the details of the Trainer below</h6>
                     </div>
                     <form id="updateform" class="form-group">
 
-                            <label for="firstname">First Name *</label>
-                            <input id="firstname" class="form-control" type="text" name="firstname" value="George" placeholder="Enter letters only (length must be 2-15)" autocomplete="off" required minlength="2" maxlength="15" pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 chars" />
-
-                        
-                            <label for="lasttname">Last Name *</label>
-                            <input id="lasttname" class="form-control" type="text" name="lastnmame" value="Kalokyris" placeholder="Enter letters only (length must be 2-15)" autocomplete="off" required />
-
-                            <label for="DateOfBirth">Date Of Birth (from 01-01-1950 to 31-12-2021)*</label>
-                            <input id="DateOfBirth" class="form-control" type="date" name="DateOfBirth" value="1994-10-19" placeholder="1950-2021" autocomplete="off" required min="1950-01-01" max="2003-12-31" />
-
-                            <label for="Email">Email</label>
-                            <input id="Email" class="form-control" type="email" name="email" value="kalokirisg@gmail.com" placeholder="Email formatting accepted only" autocomplete="off" required  />
+                        <label for="firstname">First Name *</label>
+                        <input id="firstname" class="form-control" type="text" name="firstname" value="Hector" placeholder="Enter letters only (length must be 2-15)" autocomplete="off" required minlength="2" maxlength="15" pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 chars" />
 
 
-                            <label for="phonenum">Phone Number</label>
-                            <input id="phonenum" class="form-control" type="text" name="phonenum" value="+44 07510007010" autocomplete="off" />
-                       
-                            <label for="TuitionFees">Tuition Fees</label>
-                            <input id="TuitionFees" class="form-control" type="number" name="Number of Tuition Fees" value="2000" autocomplete="off" required min="0" max="10000" />
+                        <label for="lasttname">Last Name *</label>
+                        <input id="lasttname" class="form-control" type="text" name="lastnmame" value="Gkatsos" placeholder="Enter letters only (length must be 2-15)" autocomplete="off" required />
 
+                        <label for="DateOfBirth">Date Of Birth (from 01-01-1950 to 31-12-2021)*</label>
+                        <input id="DateOfBirth" class="form-control" type="date" name="DateOfBirth" value="1982-10-19" placeholder="1950-2021" autocomplete="off" required min="1950-01-01" max="2003-12-31" />
 
-                            <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
+                        <label for="Email">Email</label>
+                        <input id="Email" class="form-control" type="email" name="email" value="hgatsos@gmail.com" placeholder="Email formatting accepted only" autocomplete="off" required />
+
+                        <label for="phonenum">Phone Number</label>
+                        <input id="phonenum" class="form-control" type="text" name="phonenum" value="+30 6945916123" autocomplete="off" />
+
+                        <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
 
                         <div class="mt-4 mb-0">
-                            <a class="btn" href="#tabs-1" style="color: white; background-color: green;">Return to Students</a>
+                            <a class="btn" href="#tabs-1" style="color: white; background-color: green;">Return to Trainers</a>
                         </div>
 
                     </form>
@@ -338,49 +324,50 @@
         $('.nav li:first').addClass('active');
 
         var showSection = function showSection(section, isAnimate) {
-          var
-          direction = section.replace(/#/, ''),
-          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-          reqSectionPos = reqSection.offset().top - 0;
+            var
+                direction = section.replace(/#/, ''),
+                reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+                reqSectionPos = reqSection.offset().top - 0;
 
-          if (isAnimate) {
-            $('body, html').animate({
-              scrollTop: reqSectionPos },
-            800);
-          } else {
-            $('body, html').scrollTop(reqSectionPos);
-          }
+            if (isAnimate) {
+                $('body, html').animate({
+                    scrollTop: reqSectionPos
+                },
+                    800);
+            } else {
+                $('body, html').scrollTop(reqSectionPos);
+            }
 
         };
 
         var checkSection = function checkSection() {
-          $('.section').each(function () {
-            var
-            $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-            if (topEdge < wScroll && bottomEdge > wScroll) {
-              var
-              currentId = $this.data('section'),
-              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-              reqLink.closest('li').addClass('active').
-              siblings().removeClass('active');
-            }
-          });
+            $('.section').each(function () {
+                var
+                    $this = $(this),
+                    topEdge = $this.offset().top - 80,
+                    bottomEdge = topEdge + $this.height(),
+                    wScroll = $(window).scrollTop();
+                if (topEdge < wScroll && bottomEdge > wScroll) {
+                    var
+                        currentId = $this.data('section'),
+                        reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+                    reqLink.closest('li').addClass('active').
+                        siblings().removeClass('active');
+                }
+            });
         };
 
         $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-          if($(e.target).hasClass('external')) {
-            return;
-          }
-          e.preventDefault();
-          $('#menu').removeClass('active');
-          showSection($(this).attr('href'), true);
+            if ($(e.target).hasClass('external')) {
+                return;
+            }
+            e.preventDefault();
+            $('#menu').removeClass('active');
+            showSection($(this).attr('href'), true);
         });
 
         $(window).scroll(function () {
-          checkSection();
+            checkSection();
         });
     </script>
 
