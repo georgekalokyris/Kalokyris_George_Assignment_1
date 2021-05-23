@@ -97,13 +97,13 @@
             <div class="row" id='tabs-1'>
                 <div class="col-md-12">
                     <div class="section-heading">
-                        <h2>Students Per Course Management Page</h2>
+                        <h2>Assignments per Students per Course Management Page</h2>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div id='tabs'>
                         <ul>
-                            <li><a href='#tabs-1'>All Students per Course Records</a></li>
+                            <li><a href='#tabs-1'>All Assignments per Students per Course Records</a></li>
                             <li><a href='#tabs-2'>Add Students to Courses</a></li>
                         </ul>
 
@@ -111,7 +111,7 @@
                             <div>
                                 <div class="row">
                                     <div class="col-md-12 col-12">
-                                        <h4 class="text-center">All active <em> Student </em>per  <em>Course</em> records</h4>
+                                        <h4 class="text-center">All active <em> Assignments </em>per<em> Student </em>per  <em>Course</em> records</h4>
                                         <table class="table table-hover theader">
                                             <thead style="color: #f5a425; text-align:center;">
                                                 <tr>
@@ -139,6 +139,7 @@
                                                                     <th>ID</th>
                                                                     <th>First Name</th>
                                                                     <th>Last Name</th>
+                                                                    <th>Assignment</th>
                                                                     <th>Action</th>
 
                                                                 </tr>
@@ -148,8 +149,36 @@
                                                                     <td>1</td>
                                                                     <td>George</td>
                                                                     <td>Kalokyris</td>
+                                                                    <td>
+                                                                        <table>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>ID</th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>Console App</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>2</td>
+                                                                                    <td>Private school in CSS/HTML/JS</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        
+                                                                    </td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Student</a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -183,8 +212,7 @@
                                                         </table>
                                                     </td>
                                                     <td>
-                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Add new Student</a>
-
+                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Associate <em>Assignments Courses Students</em></a>
                                                     </td>
 
                                                 </tr>
@@ -442,6 +470,25 @@
                                 <br />
 
                                 <div class="col-md-12">
+                                    <label for="coursetitle">Assignments (filtered according to course)*</label>
+
+                                    <br />
+
+                                    <select required class="form-select form-select-lg mb-3" name="assignments" multiple>
+                                        <option label="Please select one or more assignments" value="" disabled></option>
+                                        <option value="1">1|Console App</option>
+                                        <option value="2">2|Private school in HTML/CSS/JS</option>
+                                        <option value="3">3|White box testing</option>
+                                        <option value="4">4|Black box testing</option>
+                                        <option value="5">5|Gant Chart</option>
+                                        <option value="6">6|Jira setup</option>
+                                        <option value="7">7|ADO.NET</option>
+                                    </select>
+                                </div>
+
+                                <br />
+
+                                <div class="col-md-12">
                                     <label for="coursetitle">Students*</label>
 
                                     <br />
@@ -454,7 +501,7 @@
                                     </select>
                                 </div>
 
-                                <button type="submit" form="contact"class="btn btn-primary" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
+                                <button type="submit" form="contact" class="btn btn-primary" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
                             </div>
                         </form>
                     </div>
