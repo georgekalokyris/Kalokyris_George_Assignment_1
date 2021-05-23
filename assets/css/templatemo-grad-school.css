@@ -717,7 +717,7 @@ section.coming-soon .continer .counter .seconds .value {
     width: 100%;
 }
 
-section.coming-soon .continer .counter span {
+section.coming-soon .continer .counter span  {
     font-size: 18px;
     text-transform: uppercase;
     color: #f5a425;
@@ -765,9 +765,9 @@ section.coming-soon form {
     text-align:center;
 }
 
-   
 
-    section.coming-soon form input {
+
+    section.coming-soon form input{
         width: 100%;
         height: 40px;
         background-color: rgba(250,250,250,0.1);
@@ -780,7 +780,7 @@ section.coming-soon form {
         letter-spacing: 0.5px;
     }
 
-section.coming-soon form input:focus {
+section.coming-soon form input:focus  {
     outline: none;
     border: none;
     box-shadow: none;

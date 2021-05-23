@@ -33,6 +33,26 @@
             color: #f5a425;
         }
 
+        option {
+            width: 100%;
+            height: 30px;
+            background-color: rgba(250,250,250,0.1);
+            border-radius: 2px;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 13px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        select {
+            background-color: rgba(250,250,250,0.1);
+            padding: 60px 40px;
+            width: 100%;
+            text-align: center;
+        }
+
         
     </style>
 </head>
@@ -68,7 +88,7 @@
         </nav>
     </header>
 
-    <!--Sub Menu-->
+    <!--All records-->
     <section class="section why-us" data-section="section2">
         <div class="container">
             <div class="row" id='tabs-1'>
@@ -117,6 +137,7 @@
                                                                     <th>First Name</th>
                                                                     <th>Last Name</th>
                                                                     <th>Action</th>
+
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -143,7 +164,7 @@
                                                         </table>
                                                     </td>
                                                     <td>
-                                                        <a class="btn inline" href="#tabs-3" style="color:white; background-color:green;">Add new Trainer</a>
+                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Add new Trainer</a>
 
                                                     </td>
 
@@ -216,16 +237,14 @@
                                                                     <td>Hector</td>
                                                                     <td>Gkatsos</td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
                                                                         <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>2</td>
-                                                                    <td>Michael</td>
-                                                                    <td>Scott</td>
+                                                                    <td>3</td>
+                                                                    <td>Dwight</td>
+                                                                    <td>Schrute</td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
                                                                         <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
                                                                     </td>
                                                                 </tr>
@@ -234,6 +253,10 @@
                                                             </tbody>
 
                                                         </table>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Add new Trainer</a>
+
                                                     </td>
 
                                                 </tr>
@@ -259,16 +282,14 @@
                                                                     <td>Hector</td>
                                                                     <td>Gkatsos</td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
                                                                         <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>2</td>
-                                                                    <td>Michael</td>
-                                                                    <td>Scott</td>
+                                                                    <td>4</td>
+                                                                    <td>Pam</td>
+                                                                    <td>Beasly</td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
                                                                         <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
                                                                     </td>
                                                                 </tr>
@@ -277,6 +298,10 @@
                                                             </tbody>
 
                                                         </table>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Add new Trainer</a>
+
                                                     </td>
 
                                                 </tr>
@@ -298,11 +323,10 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>1</td>
-                                                                    <td>Hector</td>
-                                                                    <td>Gkatsos</td>
+                                                                    <td>6</td>
+                                                                    <td>Rachel</td>
+                                                                    <td>Green</td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
                                                                         <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
                                                                     </td>
                                                                 </tr>
@@ -311,7 +335,6 @@
                                                                     <td>Michael</td>
                                                                     <td>Scott</td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
                                                                         <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
                                                                     </td>
                                                                 </tr>
@@ -320,6 +343,10 @@
                                                             </tbody>
 
                                                         </table>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Add new Trainer</a>
+
                                                     </td>
 
                                                 </tr>
@@ -338,14 +365,14 @@
         </div>
     </section>
 
-    <!--Add new Course-->
+    <!--Add new Trainers to Courses-->
     <section class="section coming-soon" data-section="section3" id="tabs-2">
         <div class="container" id='tabs-2'>
             <div class="row">
                 <div class="col-12 col-md-12 col-xs-12">
                     <div class="continer">
                         <div>
-                            <h4 class="text-center">Add new <em>Course</em> records</h4>
+                            <h4 class="text-center">Add new <em>Trainers</em> to <em>Courses</em> </h4>
                         </div>
                     </div>
                 </div>
@@ -355,36 +382,39 @@
                 <div class="col-md-12">
                     <div class="right-content">
                         <div class="top-content">
-                            <h6>Enter the details of the new Course below</h6>
+                            <h6>Please select the trainers to be added to courses</h6>
                         </div>
                         <form id="contact">
-                            <div class="row">
+                            <div class="form-group">
                                 <div class="col-md-12">
-                                    <label for="titleadd">Title*</label>
-                                        <input name="titleadd" type="text" class="form-control" id="titleadd" placeholder="Course Title" required>
+                                    <label for="coursetitle">Courses*</label>
+
+                                    <br />
+
+                                    <select required class="form-select form-select-lg mb-3" name="courses" multiple>
+                                        <option label="Please select one or more courses" value="" disabled></option>
+                                        <option value="1">C#</option>
+                                        <option value="2">Python</option>
+                                        <option value="3">Java</option>
+                                    </select>
                                 </div>
+
+                                <br />
+
                                 <div class="col-md-12">
-                                        <label for="streamadd">*Stream</label>
-                                        <input name="streamadd" type="text" class="form-control" id="streamadd" placeholder="Stream" required>
+                                    <label for="coursetitle">Trainers*</label>
+
+                                    <br />
+
+                                    <select required class="form-select form-select-lg mb-3" name="trainers" multiple>
+                                        <option label="Please select one or more trainers" value="" disabled></option>
+                                        <option value="1">1|Hector|Gkatsos</option>
+                                        <option value="2">2|Michael|Scott</option>
+                                        <option value="3">3|Dwight|Schrute</option>
+                                    </select>
                                 </div>
-                                <div class="col-md-12">
-                                        <label for="Type">Type</label>
-                                        <input name="typeadd" type="text" class="form-control" id="typeadd" placeholder="Type">
-                                </div>
-                                <div class="col-md-12">
-                                        <label for="startadd">*Start Date</label>
-                                        <input name="startdateadd" type="date" class="form-control" id="startadd" placeholder="Start Date" required>
-                                </div>
-                                <div class="col-md-12">
-                                        <label for="enddateadd">*End Date</label>
-                                        <input name="enddateadd" type="date" class="form-control" id="enddateadd" placeholder="End Date" required>
-                                </div>
-                              
-                                <div class="col-md-12">
-                                    <fieldset>
-                                        <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
-                                    </fieldset>
-                                </div>
+
+                                <button type="submit" form="contact"class="btn btn-primary" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -393,57 +423,7 @@
         </div>
     </section>
 
-    <!-- Edit existing course record -->
-    <section class="section coming-soon courses" data-section="section4" id="tabs-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-xs-12">
-                    <div class="continer">
-                        <div>
-                            <h4 class="text-center">Edit existing <em>Course</em> record</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="top-content">
-                        <h6>Update the details of the Course below</h6>
-                    </div>
-                    <form id="updateform" class="form-group">
-
-                        <div class="col-md-12">
-                            <label for="titleedit">Title*</label>
-                            <input name="titleadd" type="text" class="form-control" id="titleedit" placeholder="Course Title" value="C#" required>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="streamedit">*Stream</label>
-                            <input name="streamedit" type="text" class="form-control" id="streamedit" placeholder="Stream" value="Programming" required>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="Type">Type</label>
-                            <input name="typeedit" type="text" class="form-control" id="typeedit" placeholder="Type" value="Back end programming">
-                        </div>
-                        <div class="col-md-12">
-                            <label for="startedit">*Start Date</label>
-                            <input name="startdateedit" type="date" class="form-control" id="startedit" placeholder="Start Date" value="2021-05-01" required>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="enddateedit">*End Date</label>
-                            <input name="enddateedit" type="date" class="form-control" id="enddateedit" placeholder="End Date" value="2021-09-01" required>
-                        </div>
-
-                        <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
-
-                        <div class="mt-4 mb-0">
-                            <a class="btn" href="#tabs-1" style="color: white; background-color: green;">Return to Courses</a>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
 
     <footer>
