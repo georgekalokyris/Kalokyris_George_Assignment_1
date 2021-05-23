@@ -32,8 +32,6 @@
         #contact label {
             color: #f5a425;
         }
-
-        
     </style>
 </head>
 
@@ -52,7 +50,7 @@
                 <li><a href="Courses.html">Courses</a></li>
                 <li><a href="Trainers.html">Trainers</a></li>
                 <li><a href="Students.html">Students</a></li>
-                <li><a href="#section4">Assignments</a></li>
+                <li><a href="Assignments.html">Assignments</a></li>
 
                 <li class="has-submenu">
                     <a href="#section2">More</a>
@@ -80,42 +78,34 @@
                 <div class="col-md-12">
                     <div id='tabs'>
                         <ul>
-                            <li><a href='#tabs-1'>All Trainer Records</a></li>
-                            <li><a href='#tabs-2'>Add new Trainer Records</a></li>
-                            <li><a href='#tabs-3'>Update Trainer Records</a></li>
+                            <li><a href='#tabs-1'>All Assignment Records</a></li>
+                            <li><a href='#tabs-2'>Add new Assignment Records</a></li>
+                            <li><a href='#tabs-3'>Update Assignment Records</a></li>
                         </ul>
 
                         <section class='tabs-content'>
                             <div>
                                 <div class="row">
                                     <div class="col-md-12 col-12">
-                                        <h4 class="text-center">All active <em>Trainer</em> records</h4>
+                                        <h4 class="text-center">All active <em>Assignment</em> records</h4>
                                         <table class="table table-hover theader">
-                                            <thead style="color: #f5a425; text-align:center;">
+                                            <thead style="color: #f5a425; text-align:center; display:compact;">
                                                 <tr>
-                                                    <th>First Name</th>
-                                                    <th>Last Name</th>
-                                                    <th>Date of Birth</th>
-                                                    <th>Email</th>
-                                                    <th>Phone Number</th>
-                                                    <th>Subjects</th>
+                                                    <th>Title</th>
+                                                    <th>Description</th>
+                                                    <th>Submission Date/Time (GMT)</th>
+                                                    <th>Oral Mark (% of total)</th>
+                                                    <th>Total Maximum Mark (%)</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody style="color:white; text-align:center;" id="courseslist">
                                                 <tr>
-                                                    <td>Hector</td>
-                                                    <td>Gkatsos</td>
-                                                    <td>19/10/1982</td>
-                                                    <td>hgatsos@gmail.com</td>
-                                                    <td>+30 6945916123</td>
-                                                    <td>
-                                                        <ul class="align-items-center">
-                                                            <li>C#</li>
-                                                            <li>Azure</li>
-                                                            <li>UX</li>
-                                                        </ul>
-                                                    </td>
+                                                    <td>Console App in C#</td>
+                                                    <td>CRUD functionality</td>
+                                                    <td>01 June 2021 11:30 pm</td>
+                                                    <td>30</td>
+                                                    <td>100</td>
                                                     <td>
                                                         <div class="btn-group">
                                                             <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
@@ -124,18 +114,11 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Michael</td>
-                                                    <td>Scott</td>
-                                                    <td>10/10/1977</td>
-                                                    <td>MScott@dundermifflin.com</td>
-                                                    <td>+151 812123</td>
-                                                    <td>
-                                                        <ul>
-                                                            <li>Go</li>
-                                                            <li>Java</li>
-                                                            <li>AWS</li>
-                                                        </ul>
-                                                    </td>
+                                                    <td>Private school in HTML/CSS/JS</td>
+                                                    <td>Views of assignments/courses/trainers/students</td>
+                                                    <td>01 Aug 2021 11:30 pm</td>
+                                                    <td>0</td>
+                                                    <td>100</td>
                                                     <td>
                                                         <div class="btn-group">
                                                             <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
@@ -143,20 +126,25 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Dwight</td>
-                                                    <td>Schrute</td>
-                                                    <td>01/03/1980</td>
-                                                    <td>Dwight@dundermifflin.com</td>
-                                                    <td>+44 1289312</td>
-
+                                                 <tr>
+                                                    <td>Database Private School</td>
+                                                    <td>SQL Server database of a private school</td>
+                                                    <td>31 May 2021 11:30 pm</td>
+                                                    <td>0</td>
+                                                    <td>100</td>
                                                     <td>
-                                                        <ul>
-                                                            <li>node.JS</li>
-                                                            <li>Angular</li>
-                                                            <li>AWS</li>
-                                                        </ul>
+                                                        <div class="btn-group">
+                                                            <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
+                                                            <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                        </div>
                                                     </td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>Azure</td>
+                                                    <td>Deployment of a web app in Azure</td>
+                                                    <td>01 Sep 2021 11:30 pm</td>
+                                                    <td>40</td>
+                                                    <td>100</td>
                                                     <td>
                                                         <div class="btn-group">
                                                             <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
@@ -179,14 +167,14 @@
         </div>
     </section>
 
-    <!--Add new Trainer-->
+    <!--Add new Course-->
     <section class="section coming-soon" data-section="section3" id="tabs-2">
         <div class="container" id='tabs-2'>
             <div class="row">
                 <div class="col-12 col-md-12 col-xs-12">
                     <div class="continer">
                         <div>
-                            <h4 class="text-center">Add new <em>Trainer</em> records</h4>
+                            <h4 class="text-center">Add new <em>Assignment</em> records</h4>
                         </div>
                     </div>
                 </div>
@@ -196,45 +184,35 @@
                 <div class="col-md-12">
                     <div class="right-content">
                         <div class="top-content">
-                            <h6>Enter the details of the new Trainer below</h6>
+                            <h6>Enter the details of the new Assignment below</h6>
                         </div>
                         <form id="contact">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <fieldset>
-                                        <label for="first_name">*First Name</label>
-                                        <input name="name" type="text" class="form-control" id="first_name" placeholder="First Name" required>
-                                    </fieldset>
+                                    <label for="titleadd">Title*</label>
+                                    <input name="titleadd" type="text" class="form-control" id="titleadd" placeholder="Course Title" required>
                                 </div>
                                 <div class="col-md-12">
-                                    <fieldset>
-                                        <label for="lastname">*Last Name</label>
-                                        <input name="lastname" type="text" class="form-control" id="lastname" placeholder="Last Name" required>
-                                    </fieldset>
+                                    <label for="descriptionadd">Description</label>
+                                    <input name="streamadd" type="text" class="form-control" id="descriptionadd" placeholder="Description">
                                 </div>
                                 <div class="col-md-12">
-                                    <fieldset>
-                                        <label for="dob">*Date of Birth</label>
-                                        <input name="dateOfBirth" type="date" class="form-control" id="dob" placeholder="DateOfBirth" required>
-                                    </fieldset>
+                                    <label for="submissiondateadd">Submission Date/Time*</label>
+                                    <input name="subdateadd" type="datetime-local" class="form-control" id="submissiondateadd" required>
                                 </div>
                                 <div class="col-md-12">
-                                    <fieldset>
-                                        <label for="email">Email</label>
-                                        <input name="email" type="email" class="form-control" id="email" placeholder="Email">
-                                    </fieldset>
+                                    <label for="oralmarkadd">Oral Mark (%) of the Total*</label>
+                                    <input name="oralmarkadd" type="number" min="0" max="100"class="form-control" id="oralmarkadd" placeholder="Oral Mark" required>
                                 </div>
                                 <div class="col-md-12">
-                                    <fieldset>
-                                        <label for="phone-number">Phone Number</label>
-                                        <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Phone Number">
-                                    </fieldset>
+                                    <label for="totalmarkadd">Total Maximum Mark (%)*</label>
+                                    <input name="totalmarkadd" type="number" min="0" max="100"class="form-control" id="totalmarkadd" placeholder="Total Mark" required>
                                 </div>
                                 
+
+
                                 <div class="col-md-12">
-                                    <fieldset>
                                         <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
-                                    </fieldset>
                                 </div>
                             </div>
                         </form>
@@ -244,14 +222,14 @@
         </div>
     </section>
 
-    <!-- Edit existing student record -->
+    <!-- Edit existing course record -->
     <section class="section coming-soon courses" data-section="section4" id="tabs-3">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 col-xs-12">
                     <div class="continer">
                         <div>
-                            <h4 class="text-center">Edit existing <em>Trainer</em> record</h4>
+                            <h4 class="text-center">Edit existing <em>Assignment</em> record</h4>
                         </div>
                     </div>
                 </div>
@@ -259,30 +237,33 @@
             <div class="row">
                 <div class="col-12">
                     <div class="top-content">
-                        <h6>Update the details of the Trainer below</h6>
+                        <h6>Update the details of the Assignment below</h6>
                     </div>
                     <form id="updateform" class="form-group">
 
-                        <label for="firstname">First Name *</label>
-                        <input id="firstname" class="form-control" type="text" name="firstname" value="Hector" placeholder="Enter letters only (length must be 2-15)" autocomplete="off" required minlength="2" maxlength="15" pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 chars" />
+                        <div class="col-md-12">
+                            <label for="titleadd">Title*</label>
+                            <input name="titleadd" type="text" class="form-control" id="titleadd" placeholder="Course Title" value="Console App in C#" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="descriptionadd">Description</label>
+                            <input name="streamadd" type="text" class="form-control" id="descriptionadd" placeholder="Description" value="CRUD functionality">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="submissiondateadd">Submission Date/Time*</label>
+                            <input name="subdateadd" type="datetime-local" class="form-control" id="submissiondateadd" required value="2021-06-01T23:30">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="oralmarkadd">Oral Mark (%) of the Total*</label>
+                            <input name="oralmarkadd" type="number" min="0" max="100" class="form-control" id="oralmarkadd" placeholder="Oral Mark" value="30" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="totalmarkadd">Total Maximum Mark (%) *</label>
+                            <input name="totalmarkadd" type="number" min="0" max="100" class="form-control" id="totalmarkadd" placeholder="Total Mark" value="100" required>
+                        </div>
 
-
-                        <label for="lasttname">Last Name *</label>
-                        <input id="lasttname" class="form-control" type="text" name="lastnmame" value="Gkatsos" placeholder="Enter letters only (length must be 2-15)" autocomplete="off" required />
-
-                        <label for="DateOfBirth">Date Of Birth (from 01-01-1950 to 31-12-2021)*</label>
-                        <input id="DateOfBirth" class="form-control" type="date" name="DateOfBirth" value="1982-10-19" placeholder="1950-2021" autocomplete="off" required min="1950-01-01" max="2003-12-31" />
-
-                        <label for="Email">Email</label>
-                        <input id="Email" class="form-control" type="email" name="email" value="hgatsos@gmail.com" placeholder="Email formatting accepted only" autocomplete="off" required />
-
-                        <label for="phonenum">Phone Number</label>
-                        <input id="phonenum" class="form-control" type="text" name="phonenum" value="+30 6945916123" autocomplete="off" />
-
-                        <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
-
-                        <div class="mt-4 mb-0">
-                            <a class="btn" href="#tabs-1" style="color: white; background-color: green;">Return to Trainers</a>
+                        <div class="col-md-12">
+                            <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
                         </div>
 
                     </form>
