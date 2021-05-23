@@ -1,0 +1,529 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Coding Bootcamp Private School</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="stylesheet" href="../css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="../css/owl.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
+
+    <style>
+        ul.courseslist {
+            list-style-type: circle;
+        }
+
+        .form-group label {
+            color: #f5a425;
+        }
+
+        #contact label {
+            color: #f5a425;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+
+    <!--header-->
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+            <a href="#" id="top"><em>Coding Bootcamp</em> Academy</a>
+        </div>
+        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="main-nav" role="navigation">
+            <ul class="main-menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="Trainers.html">Trainers</a></li>
+                <li><a href="Students.html">Students</a></li>
+                <li><a href="Assignments.html">Assignments</a></li>
+
+                <li class="has-submenu">
+                    <a href="#section2">More</a>
+                    <ul class="sub-menu">
+                        <li><a href="#section2">Trainers per Course</a></li>
+                        <li><a href="#section3">Students per Course</a></li> <!--TODO: Fix allignment of items in menu-->
+                        <li><a href="#section3">Assignments per Course</a></li>
+                        <li><a href="#section3">Assignments per Student per Course</a></li>
+                    </ul>
+                </li>
+                <li><a href="#section6">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Sub Menu-->
+    <section class="section why-us" data-section="section2">
+        <div class="container">
+            <div class="row" id='tabs-1'>
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Trainers Per Course Management Page</h2>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div id='tabs'>
+                        <ul>
+                            <li><a href='#tabs-1'>All Trainers per Course Records</a></li>
+                            <li><a href='#tabs-2'>Add new Trainers to a Course</a></li>
+                        </ul>
+
+                        <section class='tabs-content'>
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <h4 class="text-center">All active <em> Trainer </em>per  <em>Course</em> records</h4>
+                                        <table class="table table-hover theader">
+                                            <thead style="color: #f5a425; text-align:center;">
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>Stream</th>
+                                                    <th>Type</th>
+                                                    <th>Start Date</th>
+                                                    <th>End Date</th>
+                                                    <th>Trainer</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody style="color:white; text-align:center;" id="courseslist">
+                                                <tr>
+
+                                                    <td>C#</td>
+                                                    <td>Programming</td>
+                                                    <td>Back end programming</td>
+                                                    <td>23 May 2021</td>
+                                                    <td>1 Sep 2021</td>
+                                                    <td>
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>ID</th>
+                                                                    <th>First Name</th>
+                                                                    <th>Last Name</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Hector</td>
+                                                                    <td>Gkatsos</td>
+                                                                    <td class="btn-group">
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Michael</td>
+                                                                    <td>Scott</td>
+                                                                    <td class="btn-group">
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                    </td>
+                                                                </tr>
+
+
+                                                            </tbody>
+
+                                                        </table>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn inline" href="#tabs-3" style="color:white; background-color:green;">Add new Trainer</a>
+
+                                                    </td>
+
+                                                </tr>
+                                               
+                                                <tr>
+                                                    <td>Python</td>
+                                                    <td>Testing automation</td>
+                                                    <td>QA</td>
+                                                    <td>25 May 2021</td>
+                                                    <td>3 Sep 2021</td>
+                                                    <td>
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>ID</th>
+                                                                    <th>First Name</th>
+                                                                    <th>Last Name</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Hector</td>
+                                                                    <td>Gkatsos</td>
+                                                                    <td class="btn-group">
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Michael</td>
+                                                                    <td>Scott</td>
+                                                                    <td class="btn-group">
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                    </td>
+                                                                </tr>
+
+
+
+                                                            </tbody>
+
+                                                        </table>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Add new Trainer</a>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Java</td>
+                                                    <td>Programming</td>
+                                                    <td>Back end programming</td>
+                                                    <td>1 May 2021</td>
+                                                    <td>31 Aug 2021</td>
+                                                    <td>
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>ID</th>
+                                                                    <th>First Name</th>
+                                                                    <th>Last Name</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Hector</td>
+                                                                    <td>Gkatsos</td>
+                                                                    <td class="btn-group">
+                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Michael</td>
+                                                                    <td>Scott</td>
+                                                                    <td class="btn-group">
+                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                    </td>
+                                                                </tr>
+
+
+                                                            </tbody>
+
+                                                        </table>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Scrum & Workflow Management</td>
+                                                    <td>Project Management</td>
+                                                    <td>Entrepreneurship</td>
+                                                    <td>15 Feb 2021</td>
+                                                    <td>1 Aug 2021</td>
+                                                    <td>
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>ID</th>
+                                                                    <th>First Name</th>
+                                                                    <th>Last Name</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Hector</td>
+                                                                    <td>Gkatsos</td>
+                                                                    <td class="btn-group">
+                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Michael</td>
+                                                                    <td>Scott</td>
+                                                                    <td class="btn-group">
+                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                    </td>
+                                                                </tr>
+
+
+                                                            </tbody>
+
+                                                        </table>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Relational Databases</td>
+                                                    <td>Programming</td>
+                                                    <td>Databases and Information Systems</td>
+                                                    <td>1 Feb 2021</td>
+                                                    <td>31 Sep 2021</td>
+                                                    <td>
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>ID</th>
+                                                                    <th>First Name</th>
+                                                                    <th>Last Name</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Hector</td>
+                                                                    <td>Gkatsos</td>
+                                                                    <td class="btn-group">
+                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Michael</td>
+                                                                    <td>Scott</td>
+                                                                    <td class="btn-group">
+                                                                        <a class="btn btn-warning" href="#tabs-3" style="color:white; background-color:#ffc107;">Edit</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                    </td>
+                                                                </tr>
+
+
+                                                            </tbody>
+
+                                                        </table>
+                                                    </td>
+
+                                                </tr>
+
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Add new Course-->
+    <section class="section coming-soon" data-section="section3" id="tabs-2">
+        <div class="container" id='tabs-2'>
+            <div class="row">
+                <div class="col-12 col-md-12 col-xs-12">
+                    <div class="continer">
+                        <div>
+                            <h4 class="text-center">Add new <em>Course</em> records</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="right-content">
+                        <div class="top-content">
+                            <h6>Enter the details of the new Course below</h6>
+                        </div>
+                        <form id="contact">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="titleadd">Title*</label>
+                                        <input name="titleadd" type="text" class="form-control" id="titleadd" placeholder="Course Title" required>
+                                </div>
+                                <div class="col-md-12">
+                                        <label for="streamadd">*Stream</label>
+                                        <input name="streamadd" type="text" class="form-control" id="streamadd" placeholder="Stream" required>
+                                </div>
+                                <div class="col-md-12">
+                                        <label for="Type">Type</label>
+                                        <input name="typeadd" type="text" class="form-control" id="typeadd" placeholder="Type">
+                                </div>
+                                <div class="col-md-12">
+                                        <label for="startadd">*Start Date</label>
+                                        <input name="startdateadd" type="date" class="form-control" id="startadd" placeholder="Start Date" required>
+                                </div>
+                                <div class="col-md-12">
+                                        <label for="enddateadd">*End Date</label>
+                                        <input name="enddateadd" type="date" class="form-control" id="enddateadd" placeholder="End Date" required>
+                                </div>
+                              
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edit existing course record -->
+    <section class="section coming-soon courses" data-section="section4" id="tabs-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-xs-12">
+                    <div class="continer">
+                        <div>
+                            <h4 class="text-center">Edit existing <em>Course</em> record</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="top-content">
+                        <h6>Update the details of the Course below</h6>
+                    </div>
+                    <form id="updateform" class="form-group">
+
+                        <div class="col-md-12">
+                            <label for="titleedit">Title*</label>
+                            <input name="titleadd" type="text" class="form-control" id="titleedit" placeholder="Course Title" value="C#" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="streamedit">*Stream</label>
+                            <input name="streamedit" type="text" class="form-control" id="streamedit" placeholder="Stream" value="Programming" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="Type">Type</label>
+                            <input name="typeedit" type="text" class="form-control" id="typeedit" placeholder="Type" value="Back end programming">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="startedit">*Start Date</label>
+                            <input name="startdateedit" type="date" class="form-control" id="startedit" placeholder="Start Date" value="2021-05-01" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="enddateedit">*End Date</label>
+                            <input name="enddateedit" type="date" class="form-control" id="enddateedit" placeholder="End Date" value="2021-09-01" required>
+                        </div>
+
+                        <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
+
+                        <div class="mt-4 mb-0">
+                            <a class="btn" href="#tabs-1" style="color: white; background-color: green;">Return to Courses</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <i class="fa fa-copyright"></i> George Kalokyris - Assignment 1 - CB#13
+
+                        | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">TemplateMo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+            var
+                direction = section.replace(/#/, ''),
+                reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+                reqSectionPos = reqSection.offset().top - 0;
+
+            if (isAnimate) {
+                $('body, html').animate({
+                    scrollTop: reqSectionPos
+                },
+                    800);
+            } else {
+                $('body, html').scrollTop(reqSectionPos);
+            }
+
+        };
+
+        var checkSection = function checkSection() {
+            $('.section').each(function () {
+                var
+                    $this = $(this),
+                    topEdge = $this.offset().top - 80,
+                    bottomEdge = topEdge + $this.height(),
+                    wScroll = $(window).scrollTop();
+                if (topEdge < wScroll && bottomEdge > wScroll) {
+                    var
+                        currentId = $this.data('section'),
+                        reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+                    reqLink.closest('li').addClass('active').
+                        siblings().removeClass('active');
+                }
+            });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+            if ($(e.target).hasClass('external')) {
+                return;
+            }
+            e.preventDefault();
+            $('#menu').removeClass('active');
+            showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+            checkSection();
+        });
+    </script>
+
+</body>
+</html>
