@@ -57,6 +57,9 @@
             color: #f5a425;
         }
 
+        img {
+            resize: unset !important;
+        }
     </style>
 </head>
 
@@ -80,13 +83,12 @@
                 <li class="has-submenu">
                     <a href="#section2">More</a>
                     <ul class="sub-menu">
-                        <li><a href="#section2">Trainers per Course</a></li>
-                        <li><a href="#section3">Students per Course</a></li> <!--TODO: Fix allignment of items in menu-->
-                        <li><a href="#section3">Assignments per Course</a></li>
-                        <li><a href="#section3">Assignments per Student per Course</a></li>
+                        <li><a href="TrainersPerCourse.html">Trainers per Course</a></li>
+                        <li><a href="StudentsPerCourse.html">Students per Course</a></li>
+                        <li><a href="AssignmentsPerCourse.html">Assignments per Course</a></li>
+                        <li><a href="AssignmentsPerStudentPerCourse.html">Assignments per Student per Course</a></li>
                     </ul>
                 </li>
-                <li><a href="#section6">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -175,7 +177,7 @@
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
-                                                                        
+
                                                                     </td>
                                                                     <td class="btn-group">
                                                                         <a class="btn btn-danger" style="color:white; background-color:red;">Delete Student</a>
@@ -183,28 +185,77 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td>2</td>
-                                                                    <td>Antonis</td>
-                                                                    <td>Kats</td>
+                                                                    <td>Nikos</td>
+                                                                    <td>Xen</td>
+                                                                    <td>
+                                                                        <table>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>ID</th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>Console App</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>2</td>
+                                                                                    <td>Private school in CSS/HTML/JS</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Student</a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>3</td>
-                                                                    <td>Giannis</td>
-                                                                    <td>Pant</td>
+                                                                    <td>Konstantinos</td>
+                                                                    <td>Bal</td>
+                                                                    <td>
+                                                                        <table>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>ID</th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>Console App</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>2</td>
+                                                                                    <td>Private school in CSS/HTML/JS</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Student</a>
                                                                     </td>
                                                                 </tr>
-                                                                <tr>
-                                                                    <td>4</td>
-                                                                    <td>Nikos</td>
-                                                                    <td>Xen</td>
-                                                                    <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
-                                                                    </td>
-                                                                </tr>
+
 
 
                                                             </tbody>
@@ -212,11 +263,11 @@
                                                         </table>
                                                     </td>
                                                     <td>
-                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Associate <em>Assignments Courses Students</em></a>
+                                                        <a class="btn" href="#tabs-2" style="color:white; background-color:green;">Associate <em>Assignments Courses Students</em></a>
                                                     </td>
 
                                                 </tr>
-                                               
+
                                                 <tr>
                                                     <td>Python</td>
                                                     <td>Testing automation</td>
@@ -230,40 +281,118 @@
                                                                     <th>ID</th>
                                                                     <th>First Name</th>
                                                                     <th>Last Name</th>
+                                                                    <th>Assignment</th>
                                                                     <th>Action</th>
+
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>1</td>
-                                                                    <td>Hector</td>
-                                                                    <td>Gkatsos</td>
+                                                                    <td>George</td>
+                                                                    <td>Kalokyris</td>
+                                                                    <td>
+                                                                        <table>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>ID</th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>Console App</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>2</td>
+                                                                                    <td>Private school in CSS/HTML/JS</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Student</a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>2</td>
-                                                                    <td>Antonis</td>
-                                                                    <td>Kats</td>
+                                                                    <td>Nikos</td>
+                                                                    <td>Xen</td>
+                                                                    <td>
+                                                                        <table>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>ID</th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>Console App</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>2</td>
+                                                                                    <td>Private school in CSS/HTML/JS</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Student</a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>3</td>
-                                                                    <td>Giannis</td>
-                                                                    <td>Pant</td>
-                                                                    <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                    <td>Konstantinos</td>
+                                                                    <td>Bal</td>
+                                                                    <td>
+                                                                        <table>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>ID</th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>Console App</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>2</td>
+                                                                                    <td>Private school in CSS/HTML/JS</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
                                                                     </td>
-                                                                </tr>
-                                                                   <tr>
-                                                                    <td>4</td>
-                                                                    <td>Nikos</td>
-                                                                    <td>Xen</td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Student</a>
                                                                     </td>
                                                                 </tr>
 
@@ -272,10 +401,8 @@
                                                             </tbody>
 
                                                         </table>
-                                                    </td>
                                                     <td>
-                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Add new Student</a>
-
+                                                        <a class="btn" href="#tabs-2" style="color:white; background-color:green;">Associate <em>Assignments Courses Students</em></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -291,131 +418,132 @@
                                                                     <th>ID</th>
                                                                     <th>First Name</th>
                                                                     <th>Last Name</th>
+                                                                    <th>Assignment</th>
                                                                     <th>Action</th>
+
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>1</td>
-                                                                    <td>Hector</td>
-                                                                    <td>Gkatsos</td>
+                                                                    <td>George</td>
+                                                                    <td>Kalokyris</td>
+                                                                    <td>
+                                                                        <table>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>ID</th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>Console App</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>2</td>
+                                                                                    <td>Private school in CSS/HTML/JS</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Student</a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>3</td>
-                                                                    <td>Dwight</td>
-                                                                    <td>Schrute</td>
-                                                                    <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
-                                                                    </td>
-                                                                </tr>
-
-
-                                                            </tbody>
-
-                                                        </table>
-                                                    </td>
-                                                    <td>
-                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Add new Student</a>
-
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>Scrum & Workflow Management</td>
-                                                    <td>Project Management</td>
-                                                    <td>Entrepreneurship</td>
-                                                    <td>15 Feb 2021</td>
-                                                    <td>1 Aug 2021</td>
-                                                    <td>
-                                                        <table>
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>ID</th>
-                                                                    <th>First Name</th>
-                                                                    <th>Last Name</th>
-                                                                    <th>Action</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>Hector</td>
-                                                                    <td>Gkatsos</td>
-                                                                    <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
-                                                                    </td>
-                                                                </tr>
-                                                             
-                                                                <tr>
-                                                                    <td>4</td>
+                                                                    <td>2</td>
                                                                     <td>Nikos</td>
                                                                     <td>Xen</td>
+                                                                    <td>
+                                                                        <table>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>ID</th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>Console App</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>2</td>
+                                                                                    <td>Private school in CSS/HTML/JS</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Student</a>
                                                                     </td>
                                                                 </tr>
-
-
-
-                                                            </tbody>
-
-                                                        </table>
-                                                    </td>
-                                                    <td>
-                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Add new Student</a>
-
-                                                    </td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>Relational Databases</td>
-                                                    <td>Programming</td>
-                                                    <td>Databases and Information Systems</td>
-                                                    <td>1 Feb 2021</td>
-                                                    <td>31 Sep 2021</td>
-                                                    <td>
-                                                        <table>
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>ID</th>
-                                                                    <th>First Name</th>
-                                                                    <th>Last Name</th>
-                                                                    <th>Action</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>Hector</td>
-                                                                    <td>Gkatsos</td>
-                                                                    <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
-                                                                    </td>
-                                                                </tr>
-                                                              
                                                                 <tr>
                                                                     <td>3</td>
-                                                                    <td>Giannis</td>
-                                                                    <td>Pant</td>
+                                                                    <td>Konstantinos</td>
+                                                                    <td>Bal</td>
+                                                                    <td>
+                                                                        <table>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>ID</th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>Console App</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>2</td>
+                                                                                    <td>Private school in CSS/HTML/JS</td>
+                                                                                    <td class="btn-group">
+                                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Assignment</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </td>
                                                                     <td class="btn-group">
-                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete</a>
+                                                                        <a class="btn btn-danger" style="color:white; background-color:red;">Delete Student</a>
                                                                     </td>
                                                                 </tr>
-                                                               
+
+
 
                                                             </tbody>
 
                                                         </table>
-                                                    </td>
                                                     <td>
-                                                        <a class="btn" href="#tabs-3" style="color:white; background-color:green;">Add new Student</a>
-
+                                                        <a class="btn" href="#tabs-2" style="color:white; background-color:green;">Associate <em>Assignments Courses Students</em></a>
                                                     </td>
 
                                                 </tr>
+                                                
 
                                             </tbody>
 
@@ -470,7 +598,7 @@
                                 <br />
 
                                 <div class="col-md-12">
-                                    <label for="coursetitle">Assignments (filtered according to course)*</label>
+                                    <label for="coursetitle">Assignments (filtered according to courses)*</label>
 
                                     <br />
 
@@ -510,7 +638,7 @@
         </div>
     </section>
 
-    
+
 
 
     <footer>
