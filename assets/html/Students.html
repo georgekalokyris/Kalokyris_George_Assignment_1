@@ -205,38 +205,38 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <fieldset>
-                                        <label for="first_name">*First Name</label>
-                                        <input name="name" type="text" class="form-control" id="first_name" placeholder="First Name" required>
+                                        <label for="first_name">First Name*</label>
+                                        <input name="name" type="text" class="form-control" id="first_name" placeholder="[Letters only - Min length:2 Max length:20]"  minlength="2" maxlength="20" pattern="^[a-zA-Z\s]*$" required>
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                     <fieldset>
-                                        <label for="lastname">*Last Name</label>
-                                        <input name="lastname" type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+                                        <label for="lastname">Last Name*</label>
+                                        <input name="lastname" type="text" class="form-control" id="lastname" placeholder="[Letters only - Min length:2 Max length:30]"  minlength="2" maxlength="30"  pattern="^[a-zA-Z\s]*$" required>
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                     <fieldset>
-                                        <label for="dob">*Date of Birth</label>
-                                        <input name="dateOfBirth" type="date" class="form-control" id="dob" placeholder="DateOfBirth" required>
+                                        <label for="dob">Date of Birth*</label>
+                                        <input name="dateOfBirth" type="date" class="form-control" id="dob" placeholder="Date of Birth [Min: 1940 - Max: 2021]" min="1940-01-01" max="2021-12-31" required>
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                     <fieldset>
                                         <label for="email">Email</label>
-                                        <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Email format required">
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                     <fieldset>
                                         <label for="phone-number">Phone Number</label>
-                                        <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Phone Number">
+                                        <input name="phone-number" type="text" class="form-control" id="phone-number" pattern="^[0-9]+$" minlength="8" maxlength="10" placeholder="Phone Number [Must be 10 digits]">
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12">
                                     <fieldset>
                                         <label for="tuitfees">Tuition Fees</label>
-                                        <input name="tuitfees" type="number" class="form-control" id="tuitfees" placeholder="Tuition Fees">
+                                        <input name="tuitfees" type="number" class="form-control" id="tuitfees" min="0" max="5000" placeholder="Tuition Fees [0-5000]">
                                     </fieldset>
                                 </div>
                                 <div class="col-md-12">
@@ -272,24 +272,24 @@
                     <form id="updateform" class="form-group">
 
                             <label for="firstname">First Name *</label>
-                            <input id="firstname" class="form-control" type="text" name="firstname" value="George" placeholder="Enter letters only (length must be 2-15)" autocomplete="off" required minlength="2" maxlength="15" pattern="[A-Za-z]{2,15}" title="Only letters between 2 and 15 chars" />
+                            <input id="firstname" class="form-control" type="text" name="firstname" value="George" placeholder="[Letters only - Min length:2 Max length:20]"  minlength="2" maxlength="20" pattern="^[a-zA-Z\s]*$" required  />
 
                         
                             <label for="lasttname">Last Name *</label>
-                            <input id="lasttname" class="form-control" type="text" name="lastnmame" value="Kalokyris" placeholder="Enter letters only (length must be 2-15)" autocomplete="off" required />
+                            <input id="lasttname" class="form-control" type="text" name="lastnmame" value="Kalokyris" placeholder="[Letters only - Min length:2 Max length:30]"  minlength="2" maxlength="30"  pattern="^[a-zA-Z\s]*$" required/>
 
                             <label for="DateOfBirth">Date Of Birth (from 01-01-1950 to 31-12-2021)*</label>
-                            <input id="DateOfBirth" class="form-control" type="date" name="DateOfBirth" value="1994-10-19" placeholder="1950-2021" autocomplete="off" required min="1950-01-01" max="2003-12-31" />
+                            <input id="DateOfBirth" class="form-control" type="date" name="DateOfBirth" value="1994-10-19" placeholder="Date of Birth [Min: 1940 - Max: 2021]" min="1940-01-01" max="2021-12-31" required />
 
                             <label for="Email">Email</label>
-                            <input id="Email" class="form-control" type="email" name="email" value="kalokirisg@gmail.com" placeholder="Email formatting accepted only" autocomplete="off" required  />
+                            <input id="Email" class="form-control" type="email" name="email" value="kalokirisg@gmail.com"placeholder="Email format required" />
 
 
                             <label for="phonenum">Phone Number</label>
-                            <input id="phonenum" class="form-control" type="text" name="phonenum" value="+44 07510007010" autocomplete="off" />
+                            <input id="phonenum" class="form-control" type="text" name="phonenum" value="07510007010" pattern="^[0-9]+$" minlength="8" maxlength="10" placeholder="Phone Number [Must be 10 digits]" />
                        
                             <label for="TuitionFees">Tuition Fees</label>
-                            <input id="TuitionFees" class="form-control" type="number" name="Number of Tuition Fees" value="2000" autocomplete="off" required min="0" max="10000" />
+                            <input id="TuitionFees" class="form-control" type="number" name="Number of Tuition Fees" value="2000"  min="0" max="5000" placeholder="Tuition Fees [0-5000]" />
 
 
                             <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>

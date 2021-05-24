@@ -207,23 +207,23 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="titleadd">Title*</label>
-                                        <input name="titleadd" type="text" class="form-control" id="titleadd" placeholder="Course Title" required>
+                                        <input name="titleadd" type="text" class="form-control" id="titleadd" placeholder="Course Title [2-15 Characters allowed including Letters\Numbers\Symbols]" minlength="2" maxlength="15" required>
                                 </div>
                                 <div class="col-md-12">
-                                        <label for="streamadd">*Stream</label>
-                                        <input name="streamadd" type="text" class="form-control" id="streamadd" placeholder="Stream" required>
+                                        <label for="streamadd">Stream*</label>
+                                        <input name="streamadd" type="text" class="form-control" id="streamadd" placeholder="Stream [2-15 Characters allowed including Letters & Numbers]" minlength="2" maxlength="15" pattern="^[a-zA-Z0-9_.-]*$" required>
                                 </div>
                                 <div class="col-md-12">
                                         <label for="Type">Type</label>
-                                        <input name="typeadd" type="text" class="form-control" id="typeadd" placeholder="Type">
+                                        <input name="typeadd" type="text" class="form-control" id="typeadd" placeholder="Please define the type of the course">
                                 </div>
                                 <div class="col-md-12">
-                                        <label for="startadd">*Start Date</label>
-                                        <input name="startdateadd" type="date" class="form-control" id="startadd" placeholder="Start Date" required>
+                                    <label for="startadd">Start Date*</label>
+                                        <input name="startdateadd" type="date" class="form-control" id="startadd" placeholder="Course Start Date [Between 2021 and 2030]" min="2021-01-01" max="2030-12-31" required>
                                 </div>
                                 <div class="col-md-12">
-                                        <label for="enddateadd">*End Date</label>
-                                        <input name="enddateadd" type="date" class="form-control" id="enddateadd" placeholder="End Date" required>
+                                        <label for="enddateadd">End Date*</label>
+                                        <input name="enddateadd" type="date" class="form-control" id="enddateadd" placeholder="Course End Date [Between 2021 and 2030]" min="2021-01-01" max="2030-12-31" required>
                                 </div>
                               
                                 <div class="col-md-12">
@@ -260,23 +260,23 @@
 
                         <div class="col-md-12">
                             <label for="titleedit">Title*</label>
-                            <input name="titleadd" type="text" class="form-control" id="titleedit" placeholder="Course Title" value="C#" required>
+                            <input name="titleadd" type="text" class="form-control" id="titleedit" placeholder="Course Title [2-15 Characters allowed including Letters\Numbers\Symbols]" value="C#" minlength="2" maxlength="15"required>
                         </div>
                         <div class="col-md-12">
-                            <label for="streamedit">*Stream</label>
-                            <input name="streamedit" type="text" class="form-control" id="streamedit" placeholder="Stream" value="Programming" required>
+                            <label for="streamedit">Stream*</label>
+                            <input name="streamedit" type="text" class="form-control" id="streamedit"placeholder="Stream [2-15 Characters allowed including Letters & Numbers]" value="Programming" minlength="2" maxlength="15" pattern="^[a-zA-Z0-9_.-]*$" required>
                         </div>
                         <div class="col-md-12">
                             <label for="Type">Type</label>
                             <input name="typeedit" type="text" class="form-control" id="typeedit" placeholder="Type" value="Back end programming">
                         </div>
                         <div class="col-md-12">
-                            <label for="startedit">*Start Date</label>
-                            <input name="startdateedit" type="date" class="form-control" id="startedit" placeholder="Start Date" value="2021-05-01" required>
+                            <label for="startedit">Start Date*</label>
+                            <input name="startdateedit" type="date" class="form-control" id="startedit"placeholder="Course Start Date [Between 2021 and 2030]" value="2021-05-01" min="2021-01-01" max="2030-12-31" required>
                         </div>
                         <div class="col-md-12">
-                            <label for="enddateedit">*End Date</label>
-                            <input name="enddateedit" type="date" class="form-control" id="enddateedit" placeholder="End Date" value="2021-09-01" required>
+                            <label for="enddateedit">End Date*</label>
+                            <input name="enddateedit" type="date" class="form-control" id="enddateedit" placeholder="Course End Date [Between 2021 and 2030]" value="2021-09-01" min="2021-01-01" max="2030-12-31" required>
                         </div>
 
                         <button class="btn btn-primary form-control" style="text-align:center; padding:9px 30px; width:15%; text-align:center;">Submit</button>
